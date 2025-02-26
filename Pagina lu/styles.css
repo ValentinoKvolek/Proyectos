@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #990b73;
+}
+
+#animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+
+.section {
+    display: none;
+}
+
+#question, #askAgain, #surprise {
+    margin: 20px;
+}
+
+.large-text {
+    font-size: 100px; /* Aumenta el tamaño del texto */
+    color: rgb(255, 255, 255); /* Color del texto */
+    position: absolute; /* Cambia a absolute */
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar el texto */
+    z-index: 10; /* Asegúrate de que el texto esté por encima de otros elementos */
+    text-align: center; /* Asegura que el texto esté centrado */
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}
+
